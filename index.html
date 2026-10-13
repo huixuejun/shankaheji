@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>我的 PWA 合集</title>
-<style>
+<标题>我的 PWA 合集</标题>
+<样式>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
   /* ====== 背景图设置 ====== */
-  background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
+  背景:
+    线性渐变(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
     url("bg.jpg") center/cover no-repeat fixed;            /* ★ 改成你的图片路径 */
 
-  color:#eee;
+  颜色:#eee;
   font-family:"PingFang SC","Microsoft YaHei",sans-serif;
-  min-height:100vh;
+  最小高度:100vh;
   padding:32px 20px;
 
   /* ====== 全局字号（改这里统一调整） ====== */
@@ -29,16 +29,16 @@ h1{
   text-shadow: 0 2px 8px rgba(0,0,0,.6);
 }
 
-.grid{
-  display:grid;
+.网格{
+  显示:网格;
   grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
   gap:16px;
-  max-width:600px;
+  最大宽度:600px;
   margin:0 auto;
 }
 
 .card{
-  background:rgba(26,26,46,.75);          /* 半透明卡片，透出背景 */
+  background:rgba(26,26,46,.25);          /* 半透明卡片，透出背景 */
   backdrop-filter:blur(8px);              /* 毛玻璃效果（iOS/Chrome 支持） */
   -webkit-backdrop-filter:blur(8px);
   border-radius:14px;
