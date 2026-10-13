@@ -10,7 +10,7 @@
 body{
   /* ====== 背景图设置 ====== */
   背景:
-    线性渐变(rgba(0,0,0,.55), rgba(0,0,0,.55)),   /* 半透明黑遮罩，让文字更清晰 */
+    线性渐变(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
     url("bg.jpg") center/cover no-repeat fixed;            /* ★ 改成你的图片路径 */
 
   颜色:#eee;
@@ -23,7 +23,7 @@ body{
 }
 
 h1{
-  text-align:center;
+  文本对齐：居中
   font-size: 1.5em;   /* ★ 标题 = 全局字号 × 1.5 */
   margin-bottom:28px;
   text-shadow: 0 2px 8px rgba(0,0,0,.6);
@@ -38,7 +38,7 @@ h1{
 }
 
 .card{
-  background:rgba(26,26,46,.20);          /* 半透明卡片，透出背景 */
+  background:rgba(26,26,46,.75);          /* 半透明卡片，透出背景 */
   backdrop-filter:blur(8px);              /* 毛玻璃效果（iOS/Chrome 支持） */
   -webkit-backdrop-filter:blur(8px);
   border-radius:14px;
