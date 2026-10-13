@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我的 PWA 合集</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  /* ====== 背景图设置 ====== */
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),   /* 半透明黑遮罩，让文字更清晰 */
+    url("bg.jpg") center/cover no-repeat fixed;            /* ★ 改成你的图片路径 */
+
+  color:#eee;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  min-height:100vh;
+  padding:32px 20px;
+
+  /* ====== 全局字号（改这里统一调整） ====== */
+  font-size: 26px;   /* ★ 默认 16px，想大就改 18px，想小就改 14px */
+}
+
+h1{
+  text-align:center;
+  font-size: 1.5em;   /* ★ 标题 = 全局字号 × 1.5 */
+  margin-bottom:28px;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:16px;
+  max-width:600px;
+  margin:0 auto;
+}
+
+.card{
+  background:rgba(26,26,46,.75);          /* 半透明卡片，透出背景 */
+  backdrop-filter:blur(8px);              /* 毛玻璃效果（iOS/Chrome 支持） */
+  -webkit-backdrop-filter:blur(8px);
+  border-radius:14px;
+  padding:20px 16px;
+  text-align:center;
+  text-decoration:none;
+  color:#eee;
+  transition:transform .15s,box-shadow .15s,background .15s;
+  border:1px solid rgba(255,255,255,.12);
+}
+.card:active{transform:scale(.96)}
+.card:hover{background:rgba(26,26,46,.9); box-shadow:0 4px 20px rgba(0,0,0,.4)}
+
+.card .icon{
+  font-size: 2.2em;   /* ★ 图标大小 */
+  margin-bottom:10px;
+}
+.card .name{
+  font-size: 1.05em;  /* ★ 名称字号 */
+  font-weight:600;
+}
+.card .desc{
+  font-size: 0.8em;   /* ★ 描述字号 */
+  color:#aaa;
+  margin-top:6px;
+}
+</style>
+</head>
+<body>
+<h1>📱 佑德闪卡合集列表</h1>
+<div class="grid">
+
+  <a class="card" href="https://huixuejun.github.io/shoudongshanka/">
+    <div class="icon">📷</div>
+    <div class="name">佑德随机闪卡1-50</div>
+    <div class="desc">佑德汉字注音符号拼音闪卡1</div>
+  </a>
+
+  <a class="card" href="https://huixuejun.github.io/shoudongshanka2/">
+    <div class="icon">🎨</div>
+    <div class="name">佑德随机闪卡1-50</div>
+    <div class="desc">佑德汉字注音符号拼音闪卡2</div>
+  </a>
+
+  
+</div>
+</body>
+</html>
