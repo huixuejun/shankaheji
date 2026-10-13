@@ -1,25 +1,25 @@
-
+<!DOCTYPE html>
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<标题>我的 PWA 合集</标题>
-<样式>
+<title>佑德闪卡合集</title>
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
   /* ====== 背景图设置 ====== */
-  背景:
-    线性渐变(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
+  background:
+    linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
     url("bg.jpg") center/cover no-repeat fixed;            /* ★ 改成你的图片路径 */
 
-  颜色:#eee;
+  color:#eee;
   font-family:"PingFang SC","Microsoft YaHei",sans-serif;
-  最小高度:100vh;
+  min-height:100vh;
   padding:32px 20px;
 
   /* ====== 全局字号（改这里统一调整） ====== */
-  font-size: 26px;   /* ★ 默认 16px，想大就改 18px，想小就改 14px */
+  font-size: 20px;   /* ★ 默认 16px，想大就改 18px，想小就改 14px */
 }
 
 h1{
@@ -29,11 +29,11 @@ h1{
   text-shadow: 0 2px 8px rgba(0,0,0,.6);
 }
 
-.网格{
-  显示:网格;
+.grid{
+  display:grid;
   grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
   gap:16px;
-  最大宽度:600px;
+  max-width:600px;
   margin:0 auto;
 }
 
@@ -68,19 +68,19 @@ h1{
 </style>
 </head>
 <body>
-<h1>📱 佑德闪卡合集列表</h1>
+<h1>📱 佑德闪卡合集</h1>
 <div class="grid">
 
   <a class="card" href="https://huixuejun.github.io/shoudongshanka/">
     <div class="icon">📷</div>
     <div class="name">佑德随机闪卡1-50</div>
-    <div class="desc">佑德汉字注音符号拼音闪卡1</div>
+    <div class="desc">汉字注音符号拼音闪卡1</div>
   </a>
 
-  <a class="card" href="https://huixuejun.github.io/shoudongshanka2/">
-    <div class="icon">📷</div>
-    <div class="name">佑德随机闪卡50-100</div>
-    <div class="desc">佑德汉字注音符号拼音闪卡2</div>
+  <a class="card" href="https://username.github.io/slideshow-b/">
+    <div class="icon">🎨</div>
+    <div class="name">佑德随机闪卡1-50</div>
+    <div class="desc">汉字注音符号拼音闪卡2</div>
   </a>
 
   
