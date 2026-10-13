@@ -1,39 +1,39 @@
-
+<!DOCTYPE html>
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<标题>佑德闪卡合集</标题>
-<样式>
+<title>我的 PWA 合集</title>
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
   /* ====== 背景图设置 ====== */
-  背景:
-    线性渐变(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.10)),   /* 半透明黑遮罩，让文字更清晰 */
     url("bg.jpg") center/cover no-repeat fixed;            /* ★ 改成你的图片路径 */
 
-  颜色:#eee;
+  color:#eee;
   font-family:"PingFang SC","Microsoft YaHei",sans-serif;
-  最小高度:100vh;
-  内边距：32px 20px;
+  min-height:100vh;
+  padding:32px 20px;
 
-  /* ====== 全局字号（在此统一调整） ====== */
+  /* ====== 全局字号（改这里统一调整） ====== */
   font-size: 26px;   /* ★ 默认 16px，想大就改 18px，想小就改 14px */
 }
 
 h1{
-  文本对齐：居中
+  text-align:center;
   font-size: 1.5em;   /* ★ 标题 = 全局字号 × 1.5 */
   margin-bottom:28px;
   text-shadow: 0 2px 8px rgba(0,0,0,.6);
 }
 
-.网格{
-  显示:网格;
+.grid{
+  display:grid;
   grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
   gap:16px;
-  最大宽度:600px;
+  max-width:600px;
   margin:0 auto;
 }
 
@@ -60,8 +60,8 @@ h1{
   font-size: 1.05em;  /* ★ 名称字号 */
   font-weight:600;
 }
-
-
+.card .desc{
+  font-size: 0.8em;   /* ★ 描述字号 */
   color:#aaa;
   margin-top:6px;
 }
